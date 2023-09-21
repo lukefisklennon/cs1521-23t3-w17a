@@ -1,4 +1,4 @@
-## COMP1521 23T3 M17A
+## COMP1521 23T3 W17A
 
 Important links:
 
