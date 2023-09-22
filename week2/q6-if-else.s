@@ -6,9 +6,9 @@ main:
 	li	$v0, 4
 	syscall
 
-	li	$v0, 5
+	li	$v0, 5		# scanf("%d", &x);
 	syscall
-	move	$t0, $v0	# scanf("%d", &x);
+	move	$t0, $v0
 
 	ble	$t0, 100, main__if_small_big	# if (x > 100 && x < 1000) {
 	bge	$t0, 1000, main__if_small_big

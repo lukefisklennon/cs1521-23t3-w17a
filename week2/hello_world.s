@@ -5,6 +5,7 @@ main:
 	la	$a0, hello_world_msg	#
 	syscall				# printf("Hello world\n");
 
+
 	li	$v0, 0
 	jr	$ra			# return 0;
 

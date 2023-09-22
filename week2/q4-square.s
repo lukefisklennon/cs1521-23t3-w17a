@@ -5,13 +5,13 @@
 
 	.text
 main:
-	la	$a0, prompt	# printf("Enter a number: ")
+	la	$a0, prompt	# printf("Enter a number: ");
 	li	$v0, 4
 	syscall
 
-	li	$v0, 5
+	li	$v0, 5		# scanf("%d", &x);
 	syscall
-	move	$t0, $v0	# scanf("%d", &x);
+	move	$t0, $v0
 
 	mul	$t1, $t0, $t0	# y = x * x;
 
@@ -23,7 +23,7 @@ main:
 	li	$v0, 11
 	syscall
 
-	li	$v0, 0
+	li	$v0, 0		# return 0;
 	jr	$ra
 
 	.data
