@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 	snprintf(diary_path, diary_path_len, "%s/%s", home, DIARY_FILE);
 
 	FILE *diary_file = fopen(diary_path, "r");
-	if (diary_path == NULL) {
+	if (diary_file == NULL) {
 		perror(diary_path);
 		return EXIT_FAILURE;
 	}
