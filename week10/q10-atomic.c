@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <pthread.h>
+#include <stdatomic.h>
 
-int global_total = 0;
+atomic_int global_total = 0;
 
 void *add_5000_to_counter(void *data) {
     for (int i = 0; i < 5000; i++) {
